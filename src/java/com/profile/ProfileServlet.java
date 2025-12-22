@@ -27,8 +27,8 @@ import com.profile.ProfileBean;
 public class ProfileServlet extends HttpServlet {
 
     private static final String DB_URL = "jdbc:mysql://localhost:3306/student_profiles";
-    private static final String DB_USER = "root"; // your MySQL username
-    private static final String DB_PASSWORD = ""; // your MySQL password
+    private static final String DB_USER = "root"; 
+    private static final String DB_PASSWORD = ""; 
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -80,6 +80,7 @@ public class ProfileServlet extends HttpServlet {
     }
 
 } 
+
 
 
 
