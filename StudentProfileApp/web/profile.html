@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Your Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/theme.js" defer></script>
+    <style>
+        /* ---------- Form Styling ---------- */
+        form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        form textarea {
+            resize: vertical;
+        }
+
+        form button {
+            background: #ffadad;
+            color: #fff;
+            padding: 12px 25px;
+            margin: 20px 0;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+        form button:hover {
+            background: #ff6f91;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo-section">
+        <img src="images/logo1.png" alt="Logo" class="logo">
+    </div>
+    <button class="mode-toggle">🌙/☀️</button>
+</nav>
+
+<div class="container">
+    <h1>Create Your Profile</h1>
+    <form action="ProfileServlet" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="studentID">Student ID:</label>
+        <input type="text" id="studentID" name="studentID" required>
+
+        <label for="program">Program:</label>
+        <input type="text" id="program" name="program" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="hobbies">Hobbies:</label>
+        <input type="text" id="hobbies" name="hobbies" required>
+
+        <label for="about">About Me:</label>
+        <textarea id="about" name="about" rows="4" required></textarea>
+
+        <button type="submit">Submit Profile</button>
+    </form>
+</div>
+
+<footer>
+    © 2025 Starshine University | Designed by Imannur Umairah
+</footer>
+</body>
+</html>
